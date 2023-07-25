@@ -21,8 +21,6 @@ export class AppController {
 
   @Get('currency/:currency')
   getCurrency(@Param('currency', ValidationPipe) currency: string) {
-    console.log("🚀 ~ currency:", currency)
-    
     return currency;
   }
 }
